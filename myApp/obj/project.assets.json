@@ -3565,21 +3565,17 @@
     ]
   },
   "packageFolders": {
-    "/home/paul/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/home/paul/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/paul/Developments/CSharp/myApp/myApp.csproj",
+      "projectUniqueName": "/home/paul/Developments/DotNet/csharp/CSharp/myApp/myApp.csproj",
       "projectName": "myApp",
-      "projectPath": "/home/paul/Developments/CSharp/myApp/myApp.csproj",
+      "projectPath": "/home/paul/Developments/DotNet/csharp/CSharp/myApp/myApp.csproj",
       "packagesPath": "/home/paul/.nuget/packages/",
-      "outputPath": "/home/paul/Developments/CSharp/myApp/obj/",
+      "outputPath": "/home/paul/Developments/DotNet/csharp/CSharp/myApp/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "/home/paul/.nuget/NuGet/NuGet.Config"
       ],
@@ -3604,20 +3600,27 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "10.0.3"
+            "version": "[10.0.3, )"
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
       }
     }
   }
